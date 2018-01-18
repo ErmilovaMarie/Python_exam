@@ -16,5 +16,5 @@ deploy:
     repo: ErmilovaMarie/Python_exam 
   run:
     - 'python Code/manage.py makemigrations' 
-    - 'python Code/manage.py migrate'. 
+    - 'python Code/manage.py migrate' 
     - 'python Code/manage.py runserver' 

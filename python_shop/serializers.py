@@ -2,7 +2,7 @@ from django.shortcuts import get_object_or_404
 from rest_framework import serializers
 import jwt
 from rest_framework_jwt.serializers import jwt_payload_handler
-from code import settings
+from Code import settings
 from python_shop.models import Shop_Client, Items_options, Basket
 
 

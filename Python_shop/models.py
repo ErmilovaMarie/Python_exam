@@ -7,7 +7,7 @@ from django.contrib.auth.base_user import AbstractBaseUser
 class Item(models.Model):       # Item = Good
 
     item_name = models.CharField(max_length=140)        # name = item_name
-    section = models.ForeignKey('Category', related_name='goods')       # Category = Section
+    section = models.ForeignKey('Section', related_name='goods')       # Category = Section
 
     def __str__(self):
         return self.item_name

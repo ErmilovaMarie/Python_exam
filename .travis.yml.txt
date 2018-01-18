@@ -1,0 +1,20 @@
+language: python
+python:
+  - "3.6"
+install:
+  - pip install -r Code/requirements.txt
+script:
+  - python Code/manage.py test
+
+deploy:
+  provider: heroku
+  api_key:
+    - 5147cbc0-225c-4599-9ba2-738cb580cd8d
+  app: python-exam
+  
+ on:
+    repo: ErmilovaMarie/Python_exam 
+  run:
+    - 'python Code/manage.py makemigrations' 
+    - 'python Code/manage.py migrate'. 
+    - 'python Code/manage.py runserver' 
